@@ -19,7 +19,11 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cornerstone-core": "^2.2.8",
+    "cornerstone-wado-image-loader": "^2.2.3",
+    "dicom-parser": "^1.8.3"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
