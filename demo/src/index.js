@@ -25,14 +25,33 @@ cornerstoneWADOImageLoader.configure({
   }
 });
 
+const containerStyles = {
+  display: 'flex',
+  alignItems: 'stretch',
+  height: '100%',
+};
+const workspaceStyles = {
+  flex: 1,
+  backgroundColor: 'black',
+};
+const sidebarStyles = {
+  width: "200px",
+};
+
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>react-dicom-viewer Demo</h1>
-      <MedicalImageViewer 
-        url="wadouri:http://localhost:3000/dicom/series-000002/image-000010.dcm"
-      />
-    </div>
+    return (
+      <div style={containerStyles}>
+        <div style={workspaceStyles}>
+          <MedicalImageViewer 
+            url="wadouri:http://localhost:3000/dicom/series-000002/image-000010.dcm"
+          />
+        </div>
+        <div style={sidebarStyles}>
+          <h3>Tools</h3>
+        </div>
+      </div>
+    );
   }
 }
 
