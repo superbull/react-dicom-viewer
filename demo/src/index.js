@@ -31,11 +31,14 @@ const containerStyles = {
   height: '100%',
 };
 const workspaceStyles = {
-  flex: 1,
+  flex: '1',
   backgroundColor: 'black',
+  overflow: 'hidden',
 };
 const sidebarStyles = {
   width: "200px",
+  backgroundColor: 'grey',
+  padding: '5px',
 };
 
 class Demo extends Component {
